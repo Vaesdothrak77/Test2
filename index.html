@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/media.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"
+/>
+
+    <title>Test</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <div class="wrapper__header header-wrapper">
+            <div class="header__logo">
+              <a href=""><img src="/img/logo.png" alt="logo"/></a>
+            </div>
+            <input class="check_box" type="checkbox" id="check-menu" />
+            <label for="check-menu"></label>
+            <div class="burger-line first"></div>
+            <div class="burger-line second"></div>
+            <div class="burger-line third"></div>
+            <div class="burger-line fourth"></div>
+            <nav class="main-menu">
+              <a class="burger__link" href="#">À la carte</a>
+              <a class="burger__link" href="#">Wijnkaart</a>
+              <a class="burger__link" href="#">Lunchmenu</a>
+              <a class="burger__link" href="#">Contact</a>
+            </nav>
+            <div class="phone__block">
+              <a href="#"
+                ><img class="img__phone" src="img/svg/phone.svg" alt="phone"
+              /></a>
+              <a href="#"><p class="numb__phone">+32 9 282 57 25</p></a>
+            </div>
+          </div>
+          <div class="header__content">
+            <h3 class="header__title">OPEN EVERYDAY 6AM - 9PM</h3>
+            <h1 class="header__title-main">
+              A bad day with lunch is better than a good day without it.
+            </h1>
+          </div>
+          <div class="header__btn-container">
+            <button class="btn-reserve" onclick="openModal()">Reserve a table</button>
+            <div class="modal" id="myModal">
+              <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <h2 class="form-title" style="text-align: center;">Заполните форму</h2>
+                <form id="reservationForm">
+                  <div class="form-group">
+                    <label for="firstName">Имя:</label>
+                    <input type="text" id="firstName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Фамилия:</label>
+                    <input type="text" id="lastName" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="phoneNumber">Номер телефона:</label>
+                    <input type="tel" id="phoneNumber" required>
+                  </div>
+                  <div class="form-group" style="text-align: center;">
+                    <button class="form-btn" type="submit">Отправить данные</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="social__btn">
+              <a class="social__links" href="#"><img src="img/social links/fb.svg" alt="fb"></a>
+              <a class="social__links" href="#"><img src="img/social links/Lg.svg" alt="Lg"></a>
+              <a class="social__links" href="#"><img src="img/social links/Tw.svg" alt="Tw"></a>
+              <a class="social__links" href="#"><img src="img/social links/Yt.svg" alt="Yt"></a>
+            <div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="section__service">
+          <div class="service__content">
+            <img src="img/,,.png" alt=",," class="decore__service">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <h1 class="slider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <p class="slider__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                <h2 class="slider__untitle">ALAIN HEYNDRICKX</h2>
+              </div>
+              <div class="swiper-slide"> <h1 class="slider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <p class="slider__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                <h2 class="slider__untitle">ALAIN HEYNDRICKX</h2></div>
+              <div class="swiper-slide"> <h1 class="slider__title">Goede service, lekker eten, toffe ambiance</h1>
+                <p class="slider__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo  dolores et ea rebum. Stet clita kasd gubergren.</p>
+                <h2 class="slider__untitle">ALAIN HEYNDRICKX</h2></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>            
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  </body>
+</html>
